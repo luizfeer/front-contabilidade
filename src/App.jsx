@@ -1,11 +1,10 @@
-import './App.module.css'
-import '@fontsource/inter/500.css'
-function App() {
+import PricingSection from './components/PricingSection/PricingSection'
 
+function App() {
   return (
-    <>
-     <h1>Hello World</h1>
-    </>
+    <div>
+      <PricingSection />
+    </div>
   )
 }
 
