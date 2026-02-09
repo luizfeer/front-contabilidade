@@ -1,6 +1,5 @@
-
-import './App.css'
-
+import './App.module.css'
+import '@fontsource/inter/500.css'
 function App() {
 
   return (
