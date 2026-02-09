@@ -6,9 +6,10 @@ import IconPlataforma from '../../assets/icons/solar_laptop-linear.svg?react'
 import IconAtendimento from '../../assets/icons/ms_agent-sharp.svg?react'
 
 import FeatureItem from '../FeatureItem/FeatureItem'
-import Button from '../Button/Button'
+import Button from '../ui/Button/Button'
 import officeImg from '../../assets/images/office.jpg'
 import styles from './PricingSection.module.css'
+import typography from '../../styles/typography.module.css'
 
 const features = [
   { icon: IconAbertura, text: 'Abertura de empresa grátis (sem taxas de honorários).' },
@@ -22,7 +23,7 @@ function PricingSection() {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <h1 className={styles.title}>
+        <h1 className={`${typography.title} ${styles.title}`}>
           <span className={styles.titleLine}>Na contabilidade.com,</span>
           <span className={styles.titleLine}>você tem planos a partir</span>
           <span className={styles.titleLine}>de <strong>R$ 159/mês</strong>, já com:</span>
