@@ -21,13 +21,13 @@ const features = [
 
 function PricingSection() {
   return (
-    <section className={styles.section}>
+    <section id="planos" className={styles.section} aria-labelledby="pricing-title">
       <div className={styles.container}>
-        <h1 className={`${typography.title} ${styles.title}`}>
+        <h2 id="pricing-title" className={`${typography.title} ${styles.title}`}>
           <span className={styles.titleLine}>Na contabilidade.com,</span>
           <span className={styles.titleLine}>você tem planos a partir</span>
           <span className={styles.titleLine}>de <strong>R$ 159/mês</strong>, já com:</span>
-        </h1>
+        </h2>
 
         <div className={styles.card}>
           <div className={styles.imageWrapper}>
@@ -35,6 +35,8 @@ function PricingSection() {
               src={officeImg}
               alt="Profissional trabalhando em escritório com notebook"
               className={styles.image}
+              loading="lazy"
+              decoding="async"
             />
           </div>
 

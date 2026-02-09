@@ -5,14 +5,16 @@ import videoThumbnail from '../../assets/images/thumb.jpg'
 
 function HeroSection() {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} aria-labelledby="hero-title">
       <div className={styles.blur} aria-hidden="true" />
 
       <div className={styles.container}>
         <div className={styles.content}>
-          <span className={`${typography.title}`}>Quanto custa</span>
-          <span className={`${typography.title}`}>a contabilidade</span> 
-          <span className={`${typography.title}`}>em 2026?</span>
+          <h1 id="hero-title" className={styles.heading}>
+            <span className={typography.title}>Quanto custa</span>
+            <span className={typography.title}>a contabilidade</span>
+            <span className={typography.title}>em 2026?</span>
+          </h1>
 
           <p className={styles.description}>
             Descubra os preços médios do mercado
@@ -33,8 +35,13 @@ function HeroSection() {
         </div>
 
         <div className={styles.videoWrapper}>
-          <div className={styles.videoThumbnail} aria-label="Thumbnail de vídeo de apresentação">
-            <img src={videoThumbnail} alt="Thumbnail de vídeo de apresentação" />
+          <div className={styles.videoThumbnail}>
+            <img
+              src={videoThumbnail}
+              alt="Thumbnail de vídeo de apresentação"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
         </div>
       </div>

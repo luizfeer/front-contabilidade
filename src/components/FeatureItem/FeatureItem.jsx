@@ -6,8 +6,8 @@ function FeatureItem({ icon: Icon, text, index }) {
     <li className={`${styles.featureItem} ${itemClass}`.trim()}>
       <div className={styles.space}></div>
       <div className={styles.visualContent}>
-        <span className={styles.iconWrapper}>
-          {Icon ? <Icon className={styles.iconSvg} /> : null}
+        <span className={styles.iconWrapper} aria-hidden="true">
+          {Icon ? <Icon className={styles.iconSvg} focusable="false" /> : null}
         </span>
         <span className={styles.text}>{text}</span>
       </div>
